@@ -20,7 +20,7 @@ def main():
 
   print("Prepare start")
 
-  driver = webdriver.Chrome('chromedriver.exe')
+  driver = webdriver.Chrome('ttt/chromedriver.exe')
 
 
 
