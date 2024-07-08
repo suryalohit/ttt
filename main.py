@@ -19,6 +19,7 @@ print("Prepare start")
 def main():
 
   print("Prepare start")
+  time.sleep(6)
   chrome_options = Options()
   chrome_options.add_argument("--headless")
 
@@ -29,14 +30,14 @@ def main():
 
 
   driver.get('https://x.com/i/flow/login/')
-  time.sleep(3)
+  time.sleep(7)
   username = driver.find_element("name", "text")
   username.click()
   print("1")
   username.send_keys('karthika_swara7')
   next=driver.find_element("xpath", '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/button[2]')
   next.click()
-  time.sleep(3)
+  time.sleep(5)
   try:
     phhh = driver.find_element("name", "text")
     phhh.click()
