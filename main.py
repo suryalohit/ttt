@@ -29,42 +29,12 @@ def main():
 
 
 
-  driver.get('https://x.com/i/flow/login/')
-  time.sleep(7)
-  username = driver.find_element("name", "text")
-  username.click()
-  print("1")
-  username.send_keys('karthika_swara7')
-  next=driver.find_element("xpath", '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/button[2]')
-  next.click()
-  time.sleep(5)
-  try:
-    phhh = driver.find_element("name", "text")
-    phhh.click()
-    phhh.send_keys('91003388289')
-    ph=driver.find_element("xpath", '/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div/button')
-    ph.click()
-  except:
-    print("An exception occurred")
-  print("2")
-
-
-  password = driver.find_element("name", "password")
-  password.click()
-  password.send_keys('Anitmcom30@')
-
-
-  signin=driver.find_element("xpath", '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/button')
-  signin.click()
-
-  print("3")
-
+  driver.get('https://www.cricbuzz.com/')
   time.sleep(3)
-  driver.get('https://x.com/DaoKwonDo/')
-  time.sleep(4)
-  prof=driver.find_element("xpath", '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div/div/div/div[1]/div[1]/div[2]/div/div[2]/div[1]/a')
-  print(prof.get_attribute("href"))
-  print("all okk")  
+  next=driver.find_element("xpath", '//*[@id="cb-main-menu"]/a[2]')
+  print(next.text)
+  time.sleep(5)
+  
 
   
 if __name__ == "__main__":
