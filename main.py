@@ -19,8 +19,11 @@ print("Prepare start")
 def main():
 
   print("Prepare start")
+  chrome_options = Options()
+  chrome_options.add_argument("--headless")
 
-  driver = webdriver.Chrome('ttt/chromedriver.exe')
+  driver = webdriver.Chrome(options=chrome_options)
+
 
 
 
