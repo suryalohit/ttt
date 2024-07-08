@@ -34,6 +34,7 @@ def main():
   username.click()
   print("1")
   username.send_keys('retiredHippo')
+  print('retiredhippo')
   next=driver.find_element("xpath", '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/button[2]')
   next.click()
   time.sleep(3)
